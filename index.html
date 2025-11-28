@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portafolio | Jeronimo Rivera</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <header>
+    <h3>Jeronimo Rivera</h3>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <img src="assets/IMG/fotoPresentacion.jpeg" alt="Foto Presentacion" class="ft_pres">
+      <p>Soy un desarrollador web enfocado en frontend y experiencia de usuario, con una visión clara: crear productos digitales que se sientan naturales, fluidos y visualmente atractivos. A lo largo de mi experiencia he aprendido que una buena interfaz no solo se ve bien, sino que facilita la vida del usuario.
+
+Trabajo con una variedad de tecnologías como React, Angular, JavaScript, PHP, C#, Java, Python, MySQL y cuento con fundamentos en Dart.
+Esta combinación me permite participar tanto en el diseño de la interfaz como en el desarrollo lógico del sistema, aportando soluciones completas y escalables.
+
+Me enfoco en el rendimiento, la accesibilidad, las buenas prácticas y un diseño centrado en el usuario como pilar fundamental. Siempre estoy explorando nuevas herramientas y metodologías que me permitan mejorar como profesional y ofrecer mejores experiencias digitales.</p>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div id="grid-proyectos"></div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form class="form" id="form-contacto" novalidate>
+        <div class="field">
+          <input id="nombre" name="nombre" type="text" required class="input" placeholder=" ">
+          <label for="nombre" class="label">Nombre completo</label>
+          <span class="hint">Obligatorio</span>
+          <span class="error" aria-live="polite"></span>
+        </div>
+
+        <div class="field">
+          <input id="email" name="email" type="email" required class="input" placeholder=" ">
+          <label for="email" class="label">Correo electrónico</label>
+          <span class="error" aria-live="polite"></span>
+        </div>
+
+        <div class="field">
+          <textarea id="mensaje" name="mensaje" rows="4" class="input textarea" placeholder=" " required></textarea>
+          <label for="mensaje" class="label">Mensaje</label>
+          <span class="error" aria-live="polite"></span>
+        </div>
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Jeronimo Rivera — Medellín, Colombia</small>
+  </footer>
+
+  <script src="JS/app.js" defer></script>
+</body>
+</html>
